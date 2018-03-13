@@ -1054,6 +1054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4981507886817194}
   - component: {fileID: 114466779040725586}
+  - component: {fileID: 114122525595390946}
   m_Layer: 0
   m_Name: eaglePrefab
   m_TagString: Untagged
@@ -4706,6 +4707,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114122525595390946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908320228291680}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2eb20f354f80f47853163c81190b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  boid: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
 --- !u!114 &114466779040725586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4719,3 +4734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mass: 1
   maximumSpeed: 10
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  target: {x: 0, y: 0, z: 0}
