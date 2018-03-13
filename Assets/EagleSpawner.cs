@@ -17,6 +17,7 @@ public class EagleSpawner : MonoBehaviour {
         leaderObj.transform.parent = this.transform;
         leaderObj.transform.position = this.transform.position;
         leaderObj.transform.rotation = this.transform.rotation;
+        leaderObj.tag = "Leader";
 
         //Seek leaderSeek = leaderObj.GetComponent<Seek>();
         //Vector3 localTarget = new Vector3(0, 0, 1000);

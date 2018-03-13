@@ -21,6 +21,18 @@ public class Boid : MonoBehaviour {
     public bool seek = false;
     public bool offsetPursue = false;
 
+    //void OnDrawGizmos() {
+    //    if (seek) {
+    //        Gizmos.color = Color.red;
+    //        Gizmos.DrawLine(this.transform.position, this.transform.position + velocity);
+    //    }
+    //    if (offsetPursue) {
+    //        Gizmos.color = Color.blue;
+    //        Vector3 worldOffset = leader.transform.TransformPoint(offset);
+    //        Gizmos.DrawSphere(leader.transform.position + worldOffset, 5);
+    //    }
+    //}
+
     public Vector3 SeekForce(Vector3 target) {
         Vector3 toTarget = target - this.transform.position;
         toTarget.Normalize();
